@@ -1,0 +1,6 @@
+D:\University\Cours2\IIcemester\Курсач\GameParts\bin\Debug\GameParts.dll
+D:\University\Cours2\IIcemester\Курсач\GameParts\bin\Debug\GameParts.pdb
+D:\University\Cours2\IIcemester\Курсач\GameParts\obj\Debug\GameParts.csproj.AssemblyReference.cache
+D:\University\Cours2\IIcemester\Курсач\GameParts\obj\Debug\GameParts.csproj.CoreCompileInputs.cache
+D:\University\Cours2\IIcemester\Курсач\GameParts\obj\Debug\GameParts.dll
+D:\University\Cours2\IIcemester\Курсач\GameParts\obj\Debug\GameParts.pdb

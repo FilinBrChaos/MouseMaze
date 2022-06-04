@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameParts.GameCore.Players.PlayerBase">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="GameParts.GameCore.Players.PlayerBase.Directions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameCore\Players\PlayerBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="GameParts.GameCore.Players.PlayerBase.GameFinishedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameCore\Players\PlayerBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAAAQAAAAAAAAAAAAABBEAAEAAAABAAYAGAAAIAAAA=</HashCode>
+      <FileName>GameCore\Players\PlayerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameParts.GameCore.Players.Player">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>GameCore\Players\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameParts.GameCore.Players.HardCompuerPlayer">
+    <Position X="9" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAA=</HashCode>
+      <FileName>GameCore\Players\HardComputerPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameParts.GameCore.Players.EasyComputerPlayer">
+    <Position X="4.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>GameCore\Players\EasyComputerPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameParts.GameCore.Players.ComputerPlayer">
+    <Position X="7" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="GameParts.GameCore.Players.ComputerPlayer.GraphCell">
+        <TypeIdentifier>
+          <NewMemberFileName>GameCore\Players\ComputerPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAANAAAAAQIACAAAEAAEAAAABIAAAAQAAAAAAAA=</HashCode>
+      <FileName>GameCore\Players\ComputerPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameParts.GameCore.OtherSoftware.MazeManager" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="GameParts.GameCore.OtherSoftware.MazeManager.Winer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameCore\OtherSoftware\MazeManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="GameParts.GameCore.OtherSoftware.MazeManager.GameFinishedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameCore\OtherSoftware\MazeManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAApAAQCIABAAAAAAAACAAAAAIACAAIAAgAA=</HashCode>
+      <FileName>GameCore\OtherSoftware\MazeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
