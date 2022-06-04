@@ -1,0 +1,129 @@
+﻿<Window x:Class="MouseMaze.Windowses.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MouseMaze.Windowses"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MinHeight="500" MinWidth="400"
+        Height="500" Width="400"
+        WindowStartupLocation="CenterOwner"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <!--="CanResizeWithGrip">-->
+    <Grid Background="{StaticResource WindowBackgroundColor}">
+        <Grid Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.ColumnSpan="3" 
+                       HorizontalAlignment="Center"
+                       Text="Pause menu"
+                       Foreground="{StaticResource ForegroundColor}"
+                       FontSize="28"/>
+
+            <!--<Button Grid.Row="6"
+                    FontSize="22"
+                    Content="Save"
+                    Name="btnSave"
+                    Click="btnSave_Click"
+                    Style="{StaticResource ButtonsTheme}"
+                    Margin="5"/>-->
+            <Button Grid.Column="0"
+                    Grid.Row="6"
+                    FontSize="22"
+                    Content="Exit"
+                    Name="btnExit"
+                    Click="btnExit_Click"
+                    Style="{StaticResource ButtonsTheme}" 
+                    Margin="5"/>
+            <Button Grid.Column="1"
+                    Grid.Row="6"
+                    FontSize="22"
+                    Content="Continue"
+                    Name="btnContinue"
+                    Click="btnContinue_Click"
+                    Style="{StaticResource ButtonsTheme}" 
+                    Margin="5"/>
+
+            <Border Grid.Row="1" 
+                    Grid.ColumnSpan="3" 
+                    BorderBrush="{StaticResource ButtonDefaultColor}"
+                    BorderThickness="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="Level"
+                               Name="levelTextBlok"
+                               Foreground="{StaticResource ForegroundColor}"
+                               FontSize="22"/>
+                    <Slider Grid.ColumnSpan="3"
+                            Grid.Row="1"
+                            VerticalAlignment="Center"
+                            Minimum="0"
+                            Margin="10,0,10,0"
+                            Name="LevelSlider"
+                            TickFrequency="1"
+                            TickPlacement="BottomRight"
+                            IsSnapToTickEnabled="True"
+                            Maximum="4"/>
+                </Grid>
+            </Border>
+            <Border Grid.Row="2"
+                    Grid.ColumnSpan="3" 
+                    Grid.RowSpan="3"
+                    Margin="0,20,0,0"
+                    Padding="0,0,0,10"
+                    BorderBrush="{StaticResource ButtonHoverColor}"
+                    BorderThickness="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="Map"
+                           Foreground="{StaticResource ForegroundColor}"
+                           FontSize="22"/>
+
+                    <RadioButton Grid.Row="1"
+                                 IsChecked="True"
+                                 Style="{StaticResource RadioImage}" 
+                                 Name="Maze1"/>
+                    <RadioButton Grid.Column="1" 
+                                 Grid.Row="1"
+                                 Style="{StaticResource RadioImage}" 
+                                 Name="Maze2"/>
+                    <RadioButton Grid.Column="2" 
+                                 Grid.Row="1"
+                                 Style="{StaticResource RadioImage}" 
+                                 Name="Maze3"/>
+
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
