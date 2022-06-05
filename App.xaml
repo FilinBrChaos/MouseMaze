@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/ButtonTheme.xaml"/>
                 <ResourceDictionary Source="Styles/RadioButtonImageTheme.xaml"/>
+                <ResourceDictionary Source="Styles/WindowOperationsButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

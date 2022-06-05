@@ -20,6 +20,10 @@ namespace MouseMaze
         {
             InitializeComponent();
 
+            btnClose.Content = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "Media/Icons/CloseIcon.png";
+            btnResize.Content = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "Media/Icons/ResizeIcon.png";
+            btnPause.Content = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "Media/Icons/PauseIcon.png";
+
             KeyDown += MainWindow_KeyDown;
             MouseDown += MainWindow_MouseDown;
             this.SizeChanged += Cont_SizeChanged;
@@ -149,6 +153,11 @@ namespace MouseMaze
         {
             if (WindowState != WindowState.Maximized) WindowState = WindowState.Maximized;
             else WindowState = WindowState.Normal;
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

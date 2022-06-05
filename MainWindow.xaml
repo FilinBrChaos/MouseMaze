@@ -14,46 +14,45 @@
         ShowInTaskbar="True">
     <Grid Background="{StaticResource WindowBackgroundColor}" 
           Name="MainGrid">
-        <Grid Margin="20">
-            <Grid.Effect>
-                <BlurEffect x:Name="Blur"/>
-            </Grid.Effect>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+        <Grid.Effect>
+            <BlurEffect x:Name="Blur"/>
+        </Grid.Effect>
 
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" 
-                        Content="Pause"
-                        Margin="10" 
-                        FontSize="29"
-                        FontFamily="Consolas"
-                        Name="btnPause"
-                        Click="btnPause_Click"
-                        Focusable="False"
-                        Style="{StaticResource ButtonsTheme}"/>
-                <Button Grid.Column="1" 
-                        Content="Resize"
-                        Margin="10"
-                        FontSize="29"
-                        FontFamily="Consolas"
-                        Name="btnResize"
-                        Click="btnResize_Click"
-                        Focusable="False"
-                        Style="{StaticResource ButtonsTheme}"/>
-            </Grid>
-
+        <Grid Margin="10" Background="Transparent">
             <ContentControl Name="Cont"
-                            Grid.Row="1" 
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center"
                             Width="600"
                             Height="600"/>
+        </Grid>
+        <Grid Width="80" Height="40"
+              VerticalAlignment="Top" 
+              HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource WindOperationBtn}" 
+                    Name="btnResize" 
+                    Click="btnResize_Click"
+                    Focusable="False"
+                    Margin="5"/>
+            <Button Grid.Column="1" 
+                    Style="{StaticResource WindOperationBtn}" 
+                    Name="btnClose" 
+                    Click="btnClose_Click"
+                    Focusable="False"
+                    Margin="5"/>
+        </Grid>
+        <Grid Width="50" Height="50"
+              VerticalAlignment="Top"
+              HorizontalAlignment="Left"
+              Margin="10">
+            <Button Grid.Column="0" 
+                        Name="btnPause"
+                        Click="btnPause_Click"
+                        Focusable="False"
+                        Style="{StaticResource WindOperationBtn}"/>
         </Grid>
     </Grid>
 </Window>

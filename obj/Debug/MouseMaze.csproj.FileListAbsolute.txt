@@ -23,3 +23,4 @@ D:\University\Cours2\IIcemester\Курсач\MouseMaze\obj\Debug\Windowses\Setti
 D:\University\Cours2\IIcemester\Курсач\MouseMaze\obj\Debug\Windowses\EndGameWindow.baml
 D:\University\Cours2\IIcemester\Курсач\MouseMaze\obj\Debug\Windowses\SettingsWindow.baml
 D:\University\Cours2\IIcemester\Курсач\MouseMaze\obj\Debug\MouseMaze.csproj.CopyComplete
+D:\University\Cours2\IIcemester\Курсач\MouseMaze\obj\Debug\Styles\WindowOperationsButton.baml
